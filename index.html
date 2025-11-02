@@ -11,6 +11,9 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         h1 {
             color: #2c3e50;
@@ -35,20 +38,54 @@
         .analysis-links a:hover {
             background-color: #e3e8f0;
         }
+        footer {
+            margin-top: auto;
+            padding-top: 0;
+            border-top: 1px solid #e3e8f0;
+            text-align: center;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .social-links a:hover {
+            color: #3498db;
+        }
     </style>
 </head>
 <body>
     <h1>FIFA 22 Data Analysis Project</h1>
     <ul class="analysis-links">
         <li>
-            <a href="fifa22_EDA.html">FIFA 22 Exploratory Data Analysis</a>
+            <a href="fifa22_EDA.html" target="_blank">FIFA 22 Exploratory Data Analysis</a>
         </li>
         <li>
-            <a href="work rate pred.html">FIFA 22 Work Rate Prediction Analysis</a>
+            <a href="work rate pred.html" target="_blank">FIFA 22 Work Rate Prediction Analysis</a>
         </li>
         <li>
-            <a href="missing stat pred.html">FIFA 22 Missing Statistics Prediction Analysis</a>
+            <a href="missing stat pred.html" target="_blank">FIFA 22 Missing Statistics Prediction Analysis</a>
         </li>
     </ul>
+    <footer>
+        <ul class="social-links">
+            <li>
+                <a href="https://personal-portfolio1-zeta.vercel.app/" target="_blank">Portfolio</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/shivam-ray-b4306524a" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/SHRbharat" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
